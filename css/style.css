@@ -769,7 +769,7 @@ h4 {
   cursor: pointer;
 }
 
-.portfolio__projects {
+.grid {
   margin-top: 50px;
   height: 1272px;
   display: flex;
@@ -784,22 +784,29 @@ h4 {
   letter-spacing: 0.03em;
 }
 
-.portfolio__project-card {
+.project {
   width: 370px;
   height: 404px;
   border: 1px solid #eee;
 }
 
-.portfolio__project-thumb {
+.project:hover,
+.project:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project__thumb {
   position: relative;
   overflow: hidden;
 }
 
-.portfolio__project-thumb:hover .portfolio__slide {
+.project__thumb:hover .project__slide {
   transform: translateY(0);
 }
 
-.portfolio__slide {
+.project__slide {
   position: absolute;
   font-size: 18px;
   line-height: 28px;
@@ -817,14 +824,7 @@ h4 {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio__project-card:hover,
-.portfolio__project-card:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.portfolio__project-type {
+.project__type {
   color: var(--secondary-info-color);
   font-weight: 400;
   font-size: 16px;
@@ -832,7 +832,7 @@ h4 {
   letter-spacing: 0.03em;
 }
 
-.portfolio__description {
+.project__description {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
