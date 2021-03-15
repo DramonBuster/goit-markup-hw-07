@@ -195,7 +195,6 @@ textarea {
   line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
 }
-
 address {
   font-style: normal;
 }
@@ -207,7 +206,6 @@ Remove the inheritance of text transform in Edge and Firefox.
 
 button,
 select {
-  
   /* 1 */
   text-transform: none;
 }
@@ -313,4 +311,65 @@ Add the correct display in Chrome and Safari.
 
 summary {
   display: list-item;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+footer {
+  background-color: #2f303a;
+  padding: 60px 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+address {
+  text-align: end;
+}
+
+h1 {
+  font-weight: 900;
+  font-style: normal;
+  font-size: 44px;
+  line-height: 60px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: 120px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: $main-text;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+  vertical-align: top;
+  color: $main-text;
+  margin: 0px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+h4 {
+  display: none;
 }
