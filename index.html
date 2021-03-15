@@ -434,7 +434,7 @@
                     <div class="backdrop__form-field">
                         <label class="backdrop__label" for="name">Имя</label>
                         <div class="backdrop__wrapper">
-                            <input type="text" class="backdrop__input" id="name" name="user-name">
+                            <input type="text" class="backdrop__input" id="name" name="user-name" required>
                             <svg class="backdrop__icon" width="12" height="12">
                                 <use href="./images/icons.svg#name-form"></use>
                             </svg>
@@ -443,7 +443,7 @@
                     <div class="backdrop__form-field">
                         <label class="backdrop__label" for="tel">Телефон</label>
                         <div class="backdrop__wrapper">
-                            <input type="tel" class="backdrop__input" id="tel" name="tel">
+                            <input type="tel" class="backdrop__input" id="tel" name="tel" required>
                             <svg class="backdrop__icon" width="13" height="13">
                                 <use href="./images/icons.svg#tel-form"></use>
                             </svg>
@@ -452,7 +452,7 @@
                     <div class="backdrop__form-field">
                         <label class="backdrop__label" for="mail">Почта</label>
                         <div class="backdrop__wrapper">
-                            <input type="email" class="backdrop__input" id="mail" name="mail">
+                            <input type="email" class="backdrop__input" id="mail" name="mail" required minlength="6" maxlength="15">
                             <svg class="backdrop__icon" width="15" height="12">
                                 <use href="./images/icons.svg#email-form"></use>
                             </svg>
